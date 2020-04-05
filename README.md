@@ -1,3 +1,6 @@
+
+![CI](https://github.com/mvukic/mvukic-github-io-source/workflows/CI/badge.svg)
+
 # MvukicGithubIo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
