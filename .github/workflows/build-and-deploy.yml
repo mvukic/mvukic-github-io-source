@@ -21,7 +21,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
           BRANCH: master
           FOLDER: dist/mvukic-github-io
           REPOSITORY_NAME: mvukic/mvukic.github.io
