@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { user } from './data/user';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mvukic-github-io';
+
+  user = user;
+
 }

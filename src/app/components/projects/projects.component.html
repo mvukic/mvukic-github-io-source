@@ -1,0 +1,7 @@
+<ng-container *ngFor="let category of categories">
+  <mat-grid-list cols="5" rowHeight="250px">
+    <mat-grid-tile *ngFor="let project of category.projects" style="border: 1px solid green;">
+      <project-view [project]="project"></project-view>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-container>

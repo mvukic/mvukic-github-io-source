@@ -1,0 +1,5 @@
+  <mat-grid-list cols="5" gutterSize="10px" rowHeight="300px">
+    <mat-grid-tile *ngFor="let gist of gists" style="border: 1px solid green;">
+      <gist-view [gist]="gist"></gist-view>
+    </mat-grid-tile>
+  </mat-grid-list>
