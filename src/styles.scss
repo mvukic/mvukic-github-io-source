@@ -1,30 +1,10 @@
-@import '~@angular/material/theming';
-@include mat-core();
-
-$light-primary: mat-palette($mat-indigo);
-$light-accent: mat-palette($mat-pink, A200, A100, A400);
-$light-warn: mat-palette($mat-red);
-$light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
-
-.light {
-  @include angular-material-theme($light-theme);
-}
-
-
 html, body, app-root {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   height: 100%;
 }
 
-// Make tab content scrollable
-mat-tab-group {
-  .mat-tab-body-wrapper {
-    mat-tab-body.mat-tab-body {
-      div.mat-tab-body-content {
-        overflow: auto;
-      }
-    }
-  }
+div.spacer {
+  flex: 1 1 auto;
 }

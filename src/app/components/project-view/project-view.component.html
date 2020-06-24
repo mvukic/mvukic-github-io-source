@@ -1,37 +1,29 @@
 <div class="wrapper" fxLayout="column">
 
   <div class="name">
-    <a [href]="project.url">{{project.name}}</a>
+    <a [href]="project.url" target="_blank">{{project.displayName}}</a>
+  </div>
+
+  <div *ngIf="hasBadges" class="badges">
+    <ng-container *ngFor="let badge of project.badges">
+      <img [src]="badge.status">
+    </ng-container>
   </div>
 
   <div *ngIf="hasTechnologies">
-    <div>Technologies:</div>
     <div class="technologies">
-      <mat-chip-list>
-        <mat-chip *ngFor="let tech of project.technologies">{{tech}}</mat-chip>
-      </mat-chip-list>
+      <span *ngFor="let tech of project.technologies">
+        {{tech}}&nbsp;
+      </span>
     </div>
   </div>
 
-  <div *ngIf="hasBadges">
-    <div>Badges:</div>
-    <div class="badges">
-      <ng-container *ngIf="!hasBadges">No badges defined</ng-container>
-      <ng-container *ngFor="let badge of project.badges">
-        <img [src]="badge.status">
-      </ng-container>
-    </div>
-  </div>
-
-  <div fxFlex>
-    <div>Description:</div>
-    <div class="description">
-      {{project.description}}
-    </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center" class="description">
+      <div style="text-align: center;">{{project.description}}</div>
   </div>
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <div><a [href]="project.readmeURL" *ngIf="hasReadme">README</a></div>
-    <div><mat-chip>{{project.status}}</mat-chip></div>
+    <div><a [href]="project.readmeURL" target="_blank" *ngIf="hasReadme">README</a></div>
+    <div>{{project.status}}</div>
   </div>
 </div>

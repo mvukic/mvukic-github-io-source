@@ -9,5 +9,10 @@ import { user } from './data/user';
 export class AppComponent {
 
   user = user;
+  panel: 'projects' | 'gists' = 'projects';
+
+  showPanel(panel: 'projects' | 'gists') {
+    this.panel = panel;
+  }
 
 }

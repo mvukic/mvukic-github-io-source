@@ -1,0 +1,15 @@
+.gists-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .card:hover {
+    background-color: rgb(203, 255, 203);
+  }
+
+  .gist-item {
+    width: 250px;
+    height: 300px;
+  }
+
+}

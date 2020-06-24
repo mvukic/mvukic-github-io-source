@@ -1,0 +1,14 @@
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+
+  .header {
+    padding: 5px;
+  }
+
+  .content {
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgb(233, 234, 235);
+  }
+}

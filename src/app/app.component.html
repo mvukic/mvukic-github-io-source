@@ -1,10 +1,13 @@
-<span><a [href]="user.url">{{user.username}}</a></span>
-
-<mat-tab-group style="overflow: hidden; height: 100%;" dynamicHeight="true" animationDuration="0ms" mat-stretch-tabs>
-  <mat-tab label="Projects">
-    <app-projects></app-projects>
-  </mat-tab>
-  <mat-tab label="Gists">
-    <app-gists></app-gists>
-  </mat-tab>
-</mat-tab-group>
+<div class="wrapper" fxLayout="column">
+  <div class="header" fxLayout="row" fxLayoutGap="5px">
+    <div><a [href]="user.url" target="_blank">{{user.username}}</a></div>
+    <div class="spacer"></div>
+    <button class="button is-text is-light" [class.is-link]="panel === 'projects'" (click)="showPanel('projects')">Projects</button>
+    <button class="button is-text is-light" [class.is-link]="panel === 'gists'" (click)="showPanel('gists')">Gists</button>
+  </div>
+  
+  <div class="content">
+    <app-projects *ngIf="panel === 'projects'"></app-projects>
+    <app-gists *ngIf="panel === 'gists'"></app-gists>
+  </div>
+</div>

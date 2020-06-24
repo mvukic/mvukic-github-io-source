@@ -3,6 +3,7 @@ import { User } from '../types/user';
 
 export interface CrateProject {
   name: string;
+  displayName: string;
   description: string;
   status: ProjectStatus;
   hasReadme?: boolean;
@@ -16,11 +17,12 @@ export function createProject(user: User, project: CrateProject): Project {
   return {
     name: project.name,
     description: project.description,
+    displayName: project.displayName,
     url: projectURL,
     status: project.status,
     hasReadme: project.hasReadme,
     readmeURL: projectReadmeURL,
     badges: project.badges ?? [],
-    technologies: project.technologies ?? []
+    technologies: project.technologies ?? [],
   };
 }

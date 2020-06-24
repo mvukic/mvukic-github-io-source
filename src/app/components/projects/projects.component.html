@@ -1,7 +1,12 @@
-<ng-container *ngFor="let category of categories">
-  <mat-grid-list cols="5" rowHeight="250px">
-    <mat-grid-tile *ngFor="let project of category.projects" style="border: 1px solid green;">
-      <project-view [project]="project"></project-view>
-    </mat-grid-tile>
-  </mat-grid-list>
-</ng-container>
+<div fxLayout="column" fxLayoutAlign="start" *ngFor="let category of categories">
+  <div>Category: {{category.name}}</div>
+  <div class="category-wrapper">
+    <div class="card" style="margin: 5px" *ngFor="let project of category.projects">
+      <div class="card-content">
+        <div class="content" class="project-item">
+          <project-view [project]="project"></project-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

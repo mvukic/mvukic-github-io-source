@@ -12,6 +12,7 @@ export interface ProjectBadge {
 
 export interface Project {
   name: string;
+  displayName: string;
   url: string;
   description: string;
   status: ProjectStatus;

@@ -1,14 +1,11 @@
 <div class="wrapper" fxLayout="column">
 
   <div class="name">
-    <a [href]="gist.url">{{gist.name}}</a>
+    <a [href]="gist.url" target="_blank">{{gist.name}}</a>
   </div>
 
-  <div fxFlex>
-    <div>Description:</div>
-    <div class="description">
-      {{gist.description}}
-    </div>
-  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center" class="description">
+    <div style="text-align: center;">{{gist.description}}</div>
+</div>
   
 </div>

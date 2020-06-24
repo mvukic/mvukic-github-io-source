@@ -221,13 +221,6 @@
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-10.0.0-rc.6.tgz#635bd45d985e012e46e7fe58e7d409bbdf686f7a"
   integrity sha512-d1QKT9aeD5/0pYpHTYa878GiRMOox8qCwM51zZMeyVwhUtT3H5LxLqZBtBBOnXE4THtk8o7RhXUiGR84toX04w==
 
-"@angular/material@^10.0.0-rc.3":
-  version "10.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-10.0.0-rc.3.tgz#372e1c50be24e436ea205589c39c6ae2fdccb543"
-  integrity sha512-ox2YPXbZ3VRHqutI2GmP/9+6yezX8HUz/ofQMMrv6tR0O65YaakBwW7todTNeuva1l/lVDvME6drvh6OfM2xuw==
-  dependencies:
-    tslib "^2.0.0"
-
 "@angular/platform-browser-dynamic@~10.0.0-rc.6":
   version "10.0.0-rc.6"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-10.0.0-rc.6.tgz#7089e8755640b1097cefd15ebfe1b201252bf4fe"
@@ -2222,6 +2215,11 @@ builtins@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
+
+bulma@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.0.tgz#948c5445a49e9d7546f0826cb3820d17178a814f"
+  integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
 bytes@3.0.0:
   version "3.0.0"
