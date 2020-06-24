@@ -82,6 +82,35 @@ export const categories: ProjectCategory[] = [
     ]
   },
   {
+    name: 'College',
+    projects: [
+      createProject(user, {
+        name: 'officememo',
+        displayName: 'OfficeMemo',
+        description: 'Social network android application that uses Firebase',
+        status: ProjectStatus.ARCHIVED,
+        technologies: ['java', 'kotlin', 'rxjava', 'android studio'],
+        hasReadme: true
+      }),
+      createProject(user, {
+        name: 'BellmanFord-WFI',
+        displayName: 'BellmanFord and WFI',
+        description: 'Bellman-Ford and WFI algorithms written in kotlin',
+        status: ProjectStatus.ARCHIVED,
+        technologies: ['gradle', 'kotlin', 'intellij'],
+        hasReadme: true
+      }),
+      createProject(user, {
+        name: 'UTRLabosi',
+        displayName: 'Introduction to Theoretical Computer Science',
+        description: 'Finite automata, Turing machine, DPA, DFA minimization',
+        status: ProjectStatus.ARCHIVED,
+        technologies: ['java', 'intellij'],
+        hasReadme: true
+      })
+    ]
+  },
+  {
     name: 'Other',
     projects: [
       createProject(user, {
@@ -98,14 +127,6 @@ export const categories: ProjectCategory[] = [
         ],
         hasReadme: true
       }),
-      createProject(user, {
-        name: 'officememo',
-        displayName: 'OfficeMemo',
-        description: 'Social network android application that uses Firebase',
-        status: ProjectStatus.ARCHIVED,
-        technologies: ['java', 'kotlin', 'rxjava', 'android studio'],
-        hasReadme: true
-      })
     ]
   }
 ];
