@@ -8,3 +8,22 @@ html, body, app-root {
 div.spacer {
   flex: 1 1 auto;
 }
+
+div.pills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.pill {
+  background-color: #28a745;
+  color: white;
+  min-width: 50px;
+  border-radius: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin: 1px;
+}

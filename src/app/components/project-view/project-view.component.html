@@ -11,10 +11,10 @@
   </div>
 
   <div *ngIf="hasTechnologies">
-    <div class="technologies">
-      <span *ngFor="let tech of project.technologies">
-        {{tech}}&nbsp;
-      </span>
+    <div class="technologies pills">
+      <div class="pill" *ngFor="let tech of project.technologies">
+        {{tech}}
+      </div>
     </div>
   </div>
 

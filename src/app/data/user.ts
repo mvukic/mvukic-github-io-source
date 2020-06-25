@@ -127,6 +127,20 @@ export const categories: ProjectCategory[] = [
         ],
         hasReadme: true
       }),
+      createProject(user, {
+        name: 'mvukic-github-io-source',
+        displayName: 'Source for this page',
+        description: 'Source for this github projects overview that is deployed to mvukic.github.io',
+        status: ProjectStatus.ARCHIVED,
+        technologies: ['angular', 'typescript', 'bulma'],
+        hasReadme: true,
+        badges: [
+          {
+            type: 'Node.js',
+            status: 'https://github.com/mvukic/mvukic-github-io-source/workflows/Deploy%20to%20mvukic.github.io/badge.svg'
+          }
+        ]
+      })
     ]
   }
 ];
